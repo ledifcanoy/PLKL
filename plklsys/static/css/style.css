@@ -1,0 +1,522 @@
+body {
+    background-image: url('https://i.ibb.co/6R8tND5/bg.jpg');
+    background-size: cover;
+    overflow: hidden;
+}
+
+.btnProceed {
+    margin-top: 12%;
+    margin-left: 48%;
+    border: none; 
+    width: 88px; 
+    height: 28px; 
+    font-size: 13px; 
+    font-weight: 600; 
+    text-transform: uppercase; 
+    letter-spacing: 2px; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: 0.3s; 
+    transition-property: background;
+}
+.btnRequest {
+    border: none; 
+    width: 120px; 
+    height: 40px; 
+    font-size: 15px; 
+    font-weight: 600; 
+    text-transform: uppercase; 
+    letter-spacing: 2px; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: 0.3s; 
+    transition-property: background;
+}
+.btnProceedM3 {
+    background-color: rgb(113, 119, 143); 
+    color: rgb(231, 233, 238);
+    font-size: 12px;
+    padding: 7px 14px;
+    border: none;
+    cursor: pointer;	
+    border-radius: 3px;
+    text-align: center;
+    font-family: Graphik;
+    letter-spacing: 1px;
+    margin-top: 3%;
+    margin-left: 48%;
+    transition: 0.3s; 
+}
+.btnProceed:hover, .btnProceedM3:hover {
+    background-color: rgb(139, 145, 170);
+    color: white
+    }
+.PhilikulaLeft {
+    text-align: left;
+    font-size:25px;
+    font-family:Graphik;
+    color:white;
+    padding-left:31%;
+    margin-top:1.2%;
+    user-select: none;
+}
+.btnHome {
+    margin-left: 28%;
+    font-size:15px;
+    color:#92A3CA;
+    font-family: Graphik;
+    text-decoration: none;
+    margin-right:3%;
+    user-select: none;
+}
+.btnReviews, .btnWatchlist, .btnAbout{
+    font-size:15px;
+    color:#92A3CA;
+    font-family: Graphik;
+    text-decoration: none;
+    margin-right:3%;
+    user-select: none;
+}
+.btnHome:hover, .btnReviews:hover, .btnWatchlist:hover, .btnAbout:hover{
+    color: white;
+}
+.btnBranch {
+    margin-left: 38%;
+    font-size:15px;
+    color:#66e22c;
+    font-family: Graphik;
+    text-decoration: none;
+    margin-right:1%;
+    user-select: none;
+}
+.btnCinema, .btnShow, .btnReservation, .btnCustomer, .btnTransaction{
+    font-size:15px;
+    color:#66e22c;
+    font-family: Graphik;
+    text-decoration: none;
+    margin-right:1%;
+    user-select: none;
+}
+.PhilikulaCenterSUB {
+    font-size:50px;
+    color:white;
+    font-family: Graphik;
+    margin-left: 37%;
+    margin-top: 5%;
+    margin-bottom: 1.7%;
+    user-select: none;
+}
+.PhilikulaCenterSUBMain {
+    font-size:50px;
+    color:white;
+    font-family: Graphik;
+    margin-left: 42.5%;
+    margin-top: 5%;
+    margin-bottom: 1.7%;
+    user-select: none;
+}
+.Motto {
+    font-size:20px;
+    color:#92A3CA;
+    font-family:Graphik;
+    margin-left: 39%;
+    user-select: none;
+}
+.MottoMain {
+    font-size:20px;
+    color:#92A3CA;
+    font-family:Graphik;
+    margin-left: 29%;
+    user-select: none;
+}
+.LineSUB {
+    font-size:20px;
+    color:white;
+    font-family: Graphik;
+    margin-left: 45.5%;
+    user-select: none;
+    margin-top: 0.8%;
+    margin-bottom: .8%;
+}
+.container1 {
+    color: white; 
+    font-size: 14px;
+    padding: 7px 14px;
+    border: none;
+    cursor: pointer;	
+    border-radius: 3px;
+    text-align: center;
+    font-family: Graphik;
+    letter-spacing: 1px;
+    margin-left: 1.450%;
+    margin-top: .8%;
+    transition: 0.3s;
+}
+.text-box1 {
+    background: #92A3CA; 
+    color: #080808; 
+    border: none; 
+    width: calc(50% - 10px); 
+    height: 20px; 
+    padding: 12px; 
+    font-size: 15px; 
+    border-radius: 5px; 
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 1.0); 
+    margin-bottom: 10px; 
+    opacity: 0.9; 
+    width: 14%;
+}
+.text-box2 {
+    background: #92A3CA; 
+    color: #080808; 
+    border: none; 
+    width: calc(50% - 10px); 
+    height: 20px; 
+    padding: 12px; 
+    font-size: 15px; 
+    border-radius: 5px; 
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 1.0); 
+    margin-bottom: 10px; 
+    opacity: 0.9; 
+    width: 14%;
+}
+.text-box3 {
+    background: #92A3CA; 
+    color: #080808; 
+    border: none; 
+    width: calc(50% - 10px); 
+    height: 20px; 
+    padding: 12px; 
+    font-size: 15px; 
+    border-radius: 5px; 
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 1.0); 
+    margin-bottom: 10px; 
+    opacity: 0.9; 
+    width: 13.2%;
+}
+.genrebox {
+    background: #92A3CA; 
+    color: black;
+    border: none; 
+    width: calc(50% - 10px); 
+    height: 24px;
+    font-size: 15px; 
+    border-radius: 5px; 
+    width: 10%;
+}
+.genrebox1 {
+    background: #92A3CA; 
+    color: black;
+    border: none; 
+    width: calc(50% - 10px); 
+    height: 24px;
+    font-size: 15px; 
+    border-radius: 5px; 
+    width: 10%;
+    margin-left: 45.5%;
+    margin-top: .5%;
+}
+.genreboxm2 {
+    background: #92A3CA; 
+    color: black;
+    border: none; 
+    width: calc(50% - 10px); 
+    height: 24px;
+    font-size: 15px; 
+    border-radius: 5px; 
+    width: 10%;
+    margin-right: 1%;
+}
+.Input1 {
+    font-family: Arial;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    margin-left: 30%;
+    margin-bottom: 1%;
+    opacity: 65%;
+}
+.Input2 {
+    font-family: Arial;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    margin-left: 2%;
+    margin-bottom: 1%;
+    opacity: 65%;
+        }	
+.Input3 {
+    font-family: Arial;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    margin-left: 28.5%;
+    margin-bottom: 1%;
+    opacity: 65%;
+        }
+.Input4 {
+    font-family: Arial;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    margin-left: 30%;
+    margin-bottom: 1%;
+    opacity: 65%;
+        }
+.Input5 {
+    font-family: Arial;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    margin-left: 2%;
+    margin-bottom: 1%;
+    opacity: 65%;
+        }
+.Input4text {
+        font-family: Arial;
+        color: white;
+        font-size: 17px;
+    }
+.philResults {
+    font-size:20px;
+    color:#92A3CA;
+    font-family:Graphik;
+    margin-left: 44%;
+    user-select: none;
+}
+table {
+    font-size: 17px; 
+    font-weight: 600;  
+    letter-spacing: 2px; 
+    font-family: Arial;
+    color:white;
+    margin-left: 28.5%;
+    margin-top: 1%;
+
+}
+.CountryDropDown {
+    font-family: Arial;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    margin-left: 35%;
+    margin-bottom: 1%;
+    opacity: 65%;
+        }
+.CityDropDown {
+        font-family: Arial;
+        color: white;
+        font-size: 17px;
+        font-weight: bold;
+        margin-left: 3%;
+        margin-bottom: 1%;
+        opacity: 65%;
+            }
+.ModelTitle {
+        font-size:35px;
+        color:rgba(73, 237, 249, 0.972);
+        font-family: Graphik;
+        margin-left: 44%;
+        margin-top: 5%;
+        margin-bottom: 1.7%;
+        user-select: none;
+    }
+.MovieDropDown {
+        font-family: Arial;
+        color: white;
+        font-size: 17px;
+        font-weight: bold;
+        margin-left: 28%;
+        margin-bottom: 1%;
+        opacity: 65%;
+            }
+.DateDropDown {
+        font-family: Arial;
+        color: white;
+        font-size: 17px;
+        font-weight: bold;
+        margin-left: 3%;
+        margin-bottom: 1%;
+        opacity: 65%;
+            }
+.TimeDropDown {
+        font-family: Arial;
+        color: white;
+        font-size: 17px;
+        font-weight: bold;
+        margin-left: 3%;
+        margin-bottom: 1%;
+        opacity: 65%;
+            }
+.NowShowing {
+        width: 160px;
+        height: 230px;
+        border: solid 5px transparent;
+        user-select: none;
+        border-radius: 3%;
+        border: 2px solid;
+        border-color: #92A3CA;
+    }
+.NowShowing:hover {
+        border-color: green;
+    }
+.WatchlistP {
+        width: 160px;
+        height: 230px;
+        border: solid 5px transparent;
+        user-select: none;
+        border-radius: 3%;
+        border: 2px solid;
+        border-color: #92A3CA;
+    }
+.WatchlistP:hover {
+    border-color: green;
+}
+.TicketsDropDown {
+    font-family: Arial;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    margin-left: 49%;
+    opacity: 65%;
+        }
+.ReservationDatePicker {
+    font-family: Arial;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    margin-left: 31%;
+    margin-bottom: 1%;
+    opacity: 65%;
+        }
+.ReservationTimePicker {
+    font-family: Arial;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    margin-left: -1%;
+    margin-bottom: 1%;
+    opacity: 65%;
+        }
+.ReservationInfo {
+        font-size:18px;
+        color:#92A3CA;
+        font-family: Arial;
+        text-decoration: none;
+        margin-left: 30%;
+        text-align: center;
+        inline-size: 775px;
+                    overflow-wrap: break-word;
+                    line-height: 1.3;
+                    user-select: none;
+    }
+.InputCustomerName {
+    background: #92A3CA; 
+    color: black;
+    border: none; 
+    width: calc(50% - 10px); 
+    height: 30px;
+    font-size: 15px; 
+    border-radius: 5px; 
+    width: 18%;
+    margin-left: 41.2%;
+    margin-top: .5%;
+    margin-bottom: 1%;
+}
+.InputCustomerEmail {
+    background: #92A3CA; 
+    color: black;
+    border: none; 
+    width: calc(50% - 10px); 
+    height: 30px;
+    font-size: 15px; 
+    border-radius: 5px; 
+    width: 18%;
+    margin-left: 41.2%;
+    margin-top: .5%;
+    margin-bottom: 1%;
+}
+.InputCustomerMobileNumber {
+    background: #92A3CA; 
+    color: black;
+    border: none; 
+    width: calc(50% - 10px); 
+    height: 30px;
+    font-size: 15px; 
+    border-radius: 5px; 
+    width: 18%;
+    margin-left: 41.2%;
+    margin-top: .5%;
+    margin-bottom: 1%;
+}
+.InputCustomerPaymentMethod {
+    background: #92A3CA; 
+    color: black;
+    border: none; 
+    width: calc(50% - 10px); 
+    height: 30px;
+    font-size: 15px; 
+    border-radius: 5px; 
+    width: 18%;
+    margin-left: 41.2%;
+    margin-top: .5%;
+    margin-bottom: 1%;
+}
+.InputCustomerEWallet {
+    background: #92A3CA; 
+    color: black;
+    border: none; 
+    width: calc(50% - 10px); 
+    height: 30px;
+    font-size: 15px; 
+    border-radius: 5px; 
+    width: 18%;
+    margin-left: 41.2%;
+    margin-top: .5%;
+    margin-bottom: 1%;
+}
+.CustomerName {
+    font-family: Arial;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 41.2%;
+    margin-bottom: 1%;
+    opacity: 65%;
+        }
+.CustomerEmail {
+    font-family: Arial;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 41.2%;
+    margin-bottom: 1%;
+    opacity: 65%;
+        }
+.CustomerMobileNumber {
+    font-family: Arial;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 41.2%;
+    margin-bottom: 1%;
+    opacity: 65%;
+        }
+.CustomerPaymentMethod {
+    font-family: Arial;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 41.2%;
+    margin-bottom: 1%;
+    opacity: 65%;
+        }
+.CustomerEWallet {
+    font-family: Arial;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 41.2%;
+    margin-bottom: 1%;
+    opacity: 65%;
+        }

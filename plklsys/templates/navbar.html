@@ -1,0 +1,23 @@
+{%load static%}
+<html lang="en-US">
+	<head>
+        <link rel="stylesheet" type="text/css" href="{%static 'css/style.css'%}"}>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Philikula - A Social Film Discovery</title>
+	</head>
+
+	<body>
+    <div>
+        <h1 class="PhilikulaLeft">Philikula
+        <a class="btnHome" href = "{% url "mainpage"%}">HOME</a>
+        <a class="btnReviews" >REVIEWS</a>
+        <a class="btnWatchlist" href = "{% url "branch"%}">BOOK</a>
+        <a class="btnAbout">ABOUT</a>
+        </h1>
+    </div>
+	{% block content %}
+
+    {% endblock %}
+	</body>
+</html>

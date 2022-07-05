@@ -1,0 +1,59 @@
+{% extends 'navbar.html' %}
+{% load static%}
+{% block content %}
+		<!-- <link rel="stylesheet" type="text/css" href="{%static 'css/style.css'%}"}> -->
+		<div>
+			<br><br>
+			<h12 class="PhilikulaCenterSUB">PHILIKULA CINEMAS</h12>
+			<br><br>
+			<p1 class="Motto">Bring the movies from the screen into reality.</p1>
+			<h1 class="LineSUB">________________________________________</h1>
+		</div>
+        <br>
+        <div>
+            <a class="btnBranch" href="">BOOK</a>
+			<a class="btnCinema" href="{% url "table"%}">TABLE</a>
+        </div>
+        <br>
+        <div>
+            <p1 class="ModelTitle">Select Branch</p1>
+        </div>
+		<br><br>
+<form method='post' action="/show/">
+	{%csrf_token%}	
+	<label class="CountryDropDown">Country </label>
+		<select class="genrebox" name="country"  required>
+					<option value ="" disabled selected="">Select...</option>
+		            <option value ="Philippines">Philippines</option>
+	    </select>
+        <label class="CityDropDown">City </label>
+        <select class="genrebox" name="city" required>
+            <option value ="" disabled selected="">Select...</option>
+            <option value ="Manila">Manila</option>
+            <option value ="Cavite">Cavite</option>
+            <option value="Cebu">Cebu</option>
+            <option value="Butuan">Butuan</option>
+		</select>
+		<br><br>
+		<div>
+			<p1 class="ModelTitle">Select Cinema</p1>
+		</div>
+		<br><br>
+		<label class="CountryDropDown">Cinema </label>
+		<select class="genrebox" name="cinema" id="userGenre" placeholder="Choose your genre." required>
+					<option value ="" disabled selected="">Select...</option>
+					<option value ="2D">2D</option>
+					<option value ="2D Director's Club">2D Director's Club</option>
+					<option value="3D IMAX">3D IMAX</option>
+		</select>
+		<label class="CityDropDown">Gate </label>
+		<select class="genrebox" name="gate" id="userGenre" placeholder="Choose your genre." required>
+			<option value ="" disabled selected="">Select...</option>
+			<option value ="Gate 1">Gate 1</option>
+			<option value ="Gate 2">Gate 2</option>
+			<option value="Gate 3">Gate 3</option>
+			<option value="Gate 4">Gate 4</option>
+		</select>
+	<input class="btnProceed" type="submit"/>
+</form>
+{% endblock %}

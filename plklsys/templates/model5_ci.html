@@ -1,0 +1,53 @@
+{% extends 'navbar.html' %}
+{% load static%}
+{% block content %}
+		<div>
+			<br><br>
+			<h12 class="PhilikulaCenterSUB">PHILIKULA CINEMAS</h12>
+			<br><br>
+			<p1 class="Motto">Bring the movies from the screen into reality.</p1>
+			<br>
+			<h1 class="LineSUB">_______________________</h1>
+		</div>
+        <br>
+		<div>
+            <a class="btnBranch" href="{% url "branch"%}">BOOK</a>
+			<a class="btnCinema" href="{% url "table"%}">TABLE</a>
+        </div>
+        <br>
+        <div>
+            <p1 class="ModelTitle">Confirm your Details</p1>
+        </div>
+		<br>
+<form method='post' action="/table/">	
+	{%csrf_token%}	
+    <label class="CustomerName">Name</label>
+    <br>
+		<input class="InputCustomerName" type="text" id="userName" name="name" size="2" placeholder="ex. Juan Dela Cruz" required/>
+        <br>
+        <label class="CustomerEmail">E-mail </label>
+        <br>
+		<input class="InputCustomerEmail" type="email" id="userEmail" name="email" size="18" placeholder="ex. juandelacruz@gmail.com" required/> 
+	<br>
+	<label class="CustomerMobileNumber">Mobile Number </label>
+    <br>
+		<input class="InputCustomerEWallet" type="tel" id="userFilm" name="mobile"  placeholder="ex. 09212345678" required/>
+	<br>
+    <label class="CustomerPaymentMethod">Payment Method </label>
+		<select class="InputCustomerPaymentMethod" name="payment" id="userGenre" required>
+					<option value ="" disabled selected="">Select...</option>
+		            <option value ="Gcash">Gcash</option>
+                    <option value ="Paymaya">Paymaya</option>
+                    <option value="CoinsPH">CoinsPH</option>
+                    <option value="Paypal">Paypal</option>
+	    </select>
+	<br>
+    <label class="CustomerEWallet">eWallet Number </label>
+    <br>
+		<input class="InputCustomerEWallet" type="text" id="userFilm" name="wallet" size="18" placeholder="ex. 09212345678" required/>
+	<br>
+    <input class="btnProceedM3" id="btnConfirm" type="submit" value="Proceed"/></div>
+
+	</form>
+	</body>
+	{% endblock %}

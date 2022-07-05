@@ -1,0 +1,52 @@
+{% extends 'navbar.html' %}
+{%load static%}
+{% block content %}
+
+<div>
+    <br><br>
+    <h12 class="PhilikulaCenterSUBMain">Film Request</h12>
+    <br><br>
+    <p1 class="MottoMain">We're a global community of film fans who live to discuss, rate and rank what we watch.</p1>
+    <br>
+    <h1 class="LineSUB">_______________________</h1>
+</div>
+<br>
+<div class="container1">
+    <p>
+        <input type="radio" checked="checked" name="r1" onchange="show(this.value)"/>&nbsp; REQUEST &nbsp; &nbsp;
+        <input type="radio" name="r1" id="e1" onchange="show2()"/>&nbsp; REVIEW
+    </p>
+</div>
+<br>
+<form method=POST>		
+<label class="Input1">Name: </label>
+<input class="text-box1" type="text" id="userName" name="name" size="2" placeholder="ex. Juan Dela Cruz" required/>
+<label class="Input2">E-mail: </label>
+<input class="text-box1" type="email" id="userEmail" name="email" size="18" placeholder="ex. juandelacruz@gmail.com" required/> 
+<br><br>
+<label class="Input3">Film Title: </label>
+<input class="text-box2" type="text" id="userFilm" name="film" size="18" placeholder="ex. Birdshot" required/>
+<label class="Input5">Director: </label>
+<input class="text-box3" type="text" id="userDir" name="director" size="18" placeholder="ex. Yam Laranas" required/>
+<br><br>
+<label class="Input4">Genre: </label>
+<select class="genrebox" name="genre" id="userGenre" placeholder="Choose your genre." required>
+            <option value ="" disabled selected="">Select...</option>
+            <option value ="Action">Action</option>
+            <option value ="Comedy">Comedy</option>
+            <option value="Drama">Drama</option>
+            <option value="Horror">Horror</option>
+</select>
+
+
+<br><br>
+<center><input class="btnRequest" id="btnConfirm" type="submit" value="Request"/></center>
+<br>
+
+<br>
+<p1 class="philResults">PHILIKULA DATABASE</p1>
+    <table id="philikulaData">
+
+    </table>
+</form>
+{% endblock %}

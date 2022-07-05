@@ -1,0 +1,79 @@
+{% extends 'navbar.html' %}
+{% load static%}
+{% block content %}
+		<div>
+			<h12 class="PhilikulaCenterSUB">PHILIKULA CINEMAS</h12>
+			<p1 class="Motto">Bring the movies from the screen into reality.</p1>
+			<h1 class="LineSUB">_______________________</h1>
+		</div>
+            <p1 class="ModelTitle">Select Show</p1>
+        </div>
+    <div>
+        <center>
+			<abbr title="Kargo - Dir. TM Malones"><img class="NowShowing" src= "https://i.ibb.co/XjMK3f5/angkas.jpg"></abbr>
+			<abbr title="Batsoy - Dir. Ronald Espinosa Batallones"><img class="NowShowing" src= "https://i.ibb.co/GcN8xPs/batsoy.jpg"></abbr>
+			<abbr title="Angkas - Dir. Rain Yamson II"><img class="NowShowing" src= "https://i.ibb.co/rxvsLY0/ginhawa.jpg"></abbr>
+			<abbr title="Retirada - Milo Alto Paz and Cynthia Cruz-Paz"><img class="NowShowing" src= "https://i.ibb.co/6FqHv3b/kargo.jpg"></abbr>
+			<abbr title="Gingawa - Christian Lat"><img class="NowShowing" src= "https://i.ibb.co/B3H5SDt/retirada.jpg"></abbr>
+		</center>
+        <br>
+    </div>
+<form method='post' action="/information/">
+    {%csrf_token%}	
+	<label class="MovieDropDown">Movie </label>
+		<select class="genrebox" name="movie" id="userGenre" required>
+					<option value ="" disabled selected="">Select...</option>
+		            <option value ="Kargo">Kargo</option>
+                    <option value ="Batsoy">Batsoy</option>
+                    <option value="Angkas">Angkas</option>
+                    <option value="Retirada">Retirada</option>
+                    <option value="Ginhawa">Ginhawa</option>
+	    </select>
+    <label class="DateDropDown">Date </label>
+        <select class="genrebox" name="date" id="userGenre" required>
+            <option value ="" disabled selected="">Select...</option>
+            <option value ="August 5">August 5</option>
+            <option value ="August 6">August 6</option>
+            <option value="August 7">August 7</option>
+            <option value="August 8">August 8</option>
+            <option value="August 9">August 9</option>
+        </select>
+    <label class="TimeDropDown">Time </label>
+        <select class="genrebox" name="time" id="userGenre" required>
+            <option value ="" disabled selected="">Select...</option>
+            <option value ="10:00 AM">10:00 AM</option>
+            <option value ="12:30 PM">12:30 PM</option>
+            <option value="03:00 PM">03:00 PM</option>
+            <option value="05:30 PM">05:30 PM</option>
+            <option value="08:00 PM">08:00 PM</option>
+        </select>
+    <label class="TicketsDropDown"> Tickets </label>
+        <select class="genrebox1" name="tickets" id="userGenre" required>
+            <option value ="" disabled selected="">Select...</option>
+            <option value ="1 - 320 PHP">1 - 320 PHP</option>
+            <option value ="2 - 640 PHP">2 - 640 PHP</option>
+            <option value="3 - 960 PHP">3 - 960 PHP</option>
+            <option value="4 - 1280 PHP">4 - 1280 PHP</option>
+            <option value="5 - 1600 PHP">5 - 1600 PHP</option>
+            <option value ="6 - 1920 PHP">6 - 1920 PHP</option>
+            <option value ="7 - 2240 PHP">7 - 2240 PHP</option>
+            <option value="8 - 2560 PHP">8 - 2560 PHP</option>
+        </select>
+        <br><br>
+    <label class="ReservationDatePicker">Date of Reservation </label>
+        <input class="genreboxm2" type="date" id="start" name="dateres"
+            value="2022-08-05" min="2022-08-05" max="2022-08-09" required>
+            <input class="genreboxm2" type="time" id="appt" value="09:00" name="timeres" min="09:00" max="18:00" required>
+            <label class="ReservationTimePicker">Time of Reservation </label>
+        <div class="ReservationInfo">
+        <p2>Select the number and type of tickets you wish to buy.<br>Please note seats are reserved on a best available basis.<br>You can buy a maximum of 8 tickets per transaction.</p2><br><br>
+                </div>
+            <div>
+	<input class="btnProceedM3" id="btnConfirm" type="submit"/></div>
+	<br>
+
+	<br>
+
+	</form>
+	</body>
+	{% endblock %}

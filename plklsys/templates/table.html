@@ -1,0 +1,105 @@
+<html lang="en-US">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Philikula - A Social Film Discovery</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+	</head>
+	<body>
+		<div>
+			<h1 class="PhilikulaLeft">Philikula
+			<a class="btnHome" href="index.html">HOME</a>
+			<a class="btnReviews" href="">REVIEWS</a>
+			<a class="btnWatchlist" href="">WATCHLIST</a>
+			<a class="btnAbout" href="">ABOUT</a>
+			</h1>
+		</div>
+		<br>
+		<div>
+            <a class="btnBranch" href="{% url "branch"%}">BOOK</a>
+			<a class="btnCinema" href="{% url "table"%}">TABLE</a>
+        </div>
+        <br>
+		<table border="5" bordercolor="" align="center" class="boxngsub2">
+            <tr>
+              <th colspan="10">Cinema Information</th>
+          </tr>
+                <tr>
+                    <td>Country:</td>
+                    <td>City:</td>
+                    <td>Cinema:</td>
+                    <td>Gate:</td>
+                    <td>Action:</td> 
+                </tr>
+                <tr>
+                {%for item in Branch%}
+                    <td> {{item.itemcountry}}</td>
+                    <td> {{item.itemcity}}</td>
+                    <td> {{item.itemcinema}}</td>
+                    <td> {{item.itemgate}}</td>
+                    <td>
+                        <a class="btn primary" type='button' href="{% url 'cancel1' item.pk %}" > Cancel</a>
+                    </td>                   
+                </tr>
+                {%endfor%}
+         </table><br> 
+
+         		<table border="5" bordercolor="" align="center" class="boxngsub2">
+            <tr>
+              <th colspan="10">Ticket Booking</th>
+          </tr>
+                <tr>
+                    <td>Movie:</td>
+                    <td>Date:</td>
+                    <td>Time:</td>
+                    <td>Tickets:</td> 
+                    <td>Date of Reservation:</td>
+                    <td>Time of Reservation:</td>
+                    <td>Action:</td> 
+                </tr>
+                <tr>
+                {%for item in Show%}
+                    <td> {{item.itemmovie}}</td>
+                    <td> {{item.itemdate}}</td>
+                    <td> {{item.itemtime}}</td>
+                    <td> {{item.itemtickets}}</td>
+                    <td> {{item.itemdateres}}</td>
+                    <td> {{item.itemtimeres}}</td>
+                   <td>
+                    <a class="btn primary" type='button' href="{% url 'cancel2' item.pk %}" > Cancel</a>
+                   </td>
+                </tr>
+                {%endfor%}
+         </table><br> 
+
+          <table border="5" bordercolor="" align="center" class="boxngsub2">
+            <tr>
+              <th colspan="10">Customer Details</th>
+          </tr>
+                <tr>
+
+                    <td>Name:</td>
+                    <td>Email:</td>
+                    <td>Mobile Number:</td>
+                    <td>Payment Method:</td>
+                    <td>e-Wallet Number:</td>
+                    <td>Action:</td> 
+                </tr>
+                <tr>
+                {%for item in CustomerInformation%}
+                    <td> {{item.itemname}}</td>
+                    <td> {{item.itememail}}</td>
+                    <td> {{item.itemmobile}}</td>
+                    <td> {{item.itempayment}}</td>
+                    <td> {{item.itemwallet}}</td>
+                    <td>          
+                        <a type='button' class = "btn primary" href="{% url 'update' item.pk%}" > Edit</a> <a class="btn primary" type='button' href="{% url 'cancel' item.pk %}" > Cancel</a>
+                      </td>
+                </tr>
+                {%endfor%}
+         </table><br> 
+
+	</form>
+	</body>
+</html>
