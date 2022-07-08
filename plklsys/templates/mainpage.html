@@ -18,7 +18,8 @@
     </p>
 </div>
 <br>
-<form method=POST>		
+<form method='post' action=''>
+    {%csrf_token%}	
 <label class="Input1">Name: </label>
 <input class="text-box1" type="text" id="userName" name="name" size="2" placeholder="ex. Juan Dela Cruz" required/>
 <label class="Input2">E-mail: </label>
@@ -40,7 +41,7 @@
 
 
 <br><br>
-<center><input class="btnRequest" id="btnConfirm" type="submit" value="Request"/></center>
+<center><input class="btnRequest" id="btnConfirm" type="submit"/></center>
 <br>
 
 <br>
